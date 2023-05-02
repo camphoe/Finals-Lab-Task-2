@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finals Lab Task 2</title>
+    <script type="text/javascript" src="script.js"></script>
+
+    <style>
+
+        h3, table{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #bp-cost
+        {
+            display: inline-block;
+        }
+        fieldset {
+            width: 400 px; 
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+
+        }
+
+        #items-totalcost, #ship-cost, #hr, #beforetax, #estTax, #orderTotal {
+            display: inline-block;
+            margin-left: 1in;
+        }
+
+        
+        label, input, button{
+            padding: 5px;
+            font-size: larger;
+        }
+
+    </style>
+</head>
+
+<body>
+    <fieldset>
+        
+            
+                
+        <label for="bp">Basketball Products:</label> 
+        <input size="10"  id="bp" ></input>
+                    <button onclick="increment()">+</button>
+                    <button onclick="decrement()">-</button><br><br>
+                
+            
+           
+        <label for="ship">Shipping and Handling Fee: </label>
+                    <input  value="4.99" size="5" id="ship">
+                
+    </fieldset>
+
+    <h3>Order Summary</h3>
+
+    <table>
+        <tr>
+            <td>Items ( <span id="bp-cost"></span> ):</td>
+            <td><span id="items-totalcost">$0.00</span></td>
+        </tr>
+
+        <tr>
+            <td>Shipping and handling:</td>
+            <td><span id="ship-cost">$0.00</span></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td style="text-align: left;"><hr id="hr"style="width: 50px; "></td>
+        </tr>
+
+        <tr>
+            <td>Total before tax:</td>
+            <td><span id="beforetax">$0.00</span></td>
+        </tr>
+        
+        <tr>
+            <td>Estimated tax (10%):</td>
+            <td><span id="estTax">$0.00</span></td>
+        </tr>   
+
+        <tr>
+            <td colspan="2"><hr></td>
+        </tr>
+
+        <tr>
+            <td style="color: red;font-weight: bold;">Order total:</td>
+            <td style="color: red;font-weight: bold;">
+                <span id="orderTotal">$0.00</span></td>
+        </tr>
+    </table>
+
+
+</body>
+</html>
